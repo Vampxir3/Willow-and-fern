@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Willow & Fern — cozy coffee, matcha, pastries and more in Brighton, Colorado.">
+<title>Willow & Fern | Coffee & Cozy Things</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f7f2e8;--paper:#fffdf8;--sage:#667b62;--dark:#263329;--gold:#b58b55;--line:#ded8c9}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--dark);font-family:"DM Sans",sans-serif;line-height:1.6}
+a{color:inherit}.nav{position:sticky;top:0;z-index:10;background:rgba(247,242,232,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:"Playfair Display",serif;font-size:1.5rem;text-decoration:none}.logo span{color:var(--sage)}
+nav a{text-decoration:none;margin-left:22px;font-weight:600;font-size:.94rem}
+nav a:hover{color:var(--sage)}
+.hero{min-height:76vh;display:grid;place-items:center;text-align:center;padding:80px 22px;position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.4}
+.hero:before{width:300px;height:300px;background:#d7e0cc;left:-100px;top:80px}
+.hero:after{width:240px;height:240px;background:#ead8b9;right:-70px;bottom:50px}
+.hero-content{max-width:800px;position:relative;z-index:1}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;color:var(--sage);font-weight:700}
+h1,h2{font-family:"Playfair Display",serif;line-height:1.1}
+h1{font-size:clamp(3.2rem,8vw,6.5rem);margin:14px 0}
+h1 em{color:var(--sage);font-style:normal}
+.hero p{font-size:1.15rem;max-width:610px;margin:0 auto 28px;color:#566057}
+.btn{display:inline-block;background:var(--dark);color:white;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:700;margin:5px}
+.btn.alt{background:transparent;color:var(--dark);border:1px solid var(--dark)}
+section{padding:85px 22px}.wrap{max-width:1120px;margin:auto}
+.section-head{text-align:center;max-width:680px;margin:0 auto 42px}
+h2{font-size:2.7rem;margin:8px 0 12px}.section-head p{color:#687067}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:34px;box-shadow:0 12px 30px rgba(38,51,41,.06)}
+.about-art{min-height:390px;border-radius:24px;background:linear-gradient(145deg,#d8e0d0,#efe3cb);display:grid;place-items:center;font-size:8rem}
+.menu-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin-bottom:25px}
+.tab{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:9px 15px;cursor:pointer;font:inherit;font-weight:700;color:var(--dark)}
+.tab.active,.tab:hover{background:var(--sage);color:white;border-color:var(--sage)}
+.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.menu-card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:24px}
+.menu-card h3{font-family:"Playfair Display",serif;font-size:1.45rem;margin:0 0 13px}
+.item{display:flex;justify-content:space-between;gap:20px;padding:10px 0;border-bottom:1px dashed #d8d1c1}
+.item:last-child{border-bottom:0}.price{font-weight:700;white-space:nowrap;color:var(--sage)}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.info{text-align:center}.icon{font-size:2rem}.info h3{margin:7px 0}
+.info p{margin:3px 0;color:#657067}.info a{color:var(--sage);font-weight:700}
+.cta{text-align:center;background:var(--sage);color:white;border-radius:28px;padding:55px 25px}.cta p{opacity:.9}
+footer{padding:30px 22px;text-align:center;border-top:1px solid var(--line);color:#697169;font-size:.9rem}
+@media(max-width:760px){nav a{margin-left:10px;font-size:.8rem}.about,.menu-grid,.info-grid{grid-template-columns:1fr}.about-art{min-height:260px}section{padding:65px 18px}h2{font-size:2.2rem}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="#home">Willow <span>&</span> Fern</a>
+    <nav><a href="#about">About</a><a href="#menu">Menu</a><a href="#visit">Visit</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">Coffee • Pastries • Cozy Moments</div>
+    <h1>Welcome to <em>Willow & Fern</em></h1>
+    <p>A cozy little coffee shop in Brighton, Colorado, serving thoughtfully made drinks, bakery favorites, and a warm place to slow down.</p>
+    <a class="btn" href="#menu">Explore the menu</a>
+    <a class="btn alt" href="tel:+13033863377">Call us</a>
+  </div>
+</section>
+
+<section id="about">
+<div class="wrap about">
+  <div class="about-art" aria-label="Decorative coffee and plant illustration">☕🌿</div>
+  <div class="card">
+    <div class="eyebrow">Our little corner</div>
+    <h2>Made for slow mornings.</h2>
+    <p>Willow & Fern is a welcoming neighborhood coffee shop where good drinks and cozy moments come together.</p>
+    <p>Grab your favorite latte, settle in with a pastry, or stop by for a refreshing drink. Whether you're catching up with a friend or enjoying a quiet moment, there's always a place for you here.</p>
+  </div>
+</div>
+</section>
+
+<section id="menu">
+<div class="wrap">
+  <div class="section-head">
+    <div class="eyebrow">Something for everyone</div>
+    <h2>Our Menu</h2>
+    <p>From bakery-case favorites to signature drinks, there's always something cozy waiting for you.</p>
+  </div>
+  <div class="menu-tabs" id="tabs"></div>
+  <div class="menu-grid" id="menuGrid"></div>
+</div>
+</section>
+
+<section id="visit">
+<div class="wrap">
+  <div class="section-head">
+    <div class="eyebrow">Come say hello</div>
+    <h2>Visit Willow & Fern</h2>
+  </div>
+  <div class="info-grid">
+    <div class="card info"><div class="icon">📍</div><h3>Find us</h3><p>315 S 4th Ave<br>Brighton, CO 80601</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=315+S+4th+Ave%2C+Brighton%2C+CO+80601">Get directions →</a></div>
+    <div class="card info"><div class="icon">📞</div><h3>Give us a call</h3><p>Questions? We'd love to hear from you.</p><a href="tel:+13033863377">(303) 386-3377</a></div>
+    <div class="card info"><div class="icon">🕐</div><h3>Hours</h3><p>Mon–Fri: 6 AM–5 PM<br>Sat: 6 AM–4 PM<br>Sun: Closed</p></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap"><div class="cta">
+  <div class="eyebrow" style="color:#e9dfcc">Your next favorite coffee stop</div>
+  <h2>Come get cozy.</h2>
+  <p>Good coffee, sweet treats, and a little green around the edges.</p>
+  <a class="btn" style="background:#fff;color:#263329" href="tel:+13033863377">Call Willow & Fern</a>
+</div></div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Willow & Fern • Brighton, Colorado</footer>
+
+<script>
+const menu = {
+"Bakery Case":[["Cookie","2.00"],["Croissant","5.25"],["Muffins","4.25"],["Bagels","4.95"],["Danish","5.25"],["Cinnamon Rolls","5.25"],["GF Cookies","2.50"],["Scones","4.25"],["Red Velvet Cookie","2.95"],["Tiramisu","7.25"]],
+"Average Joe":[["Drip Coffee","4.00"],["Iced Coffee","4.00"],["Cold Brew","4.50"]],
+"Espresso":[["Americano","4.00"],["Cappuccino","5.00"],["Mocha","5.25"],["Latte","5.00"],["Cortado","4.00"],["Espresso","1.50"]],
+"Signature Beverages":[["Matcha A La Prima","5.50"],["Bex'd","5.75"],["The Golden Boy","5.50"],["Breck'N Bear","5.50"]],
+"Specialty Tea":[["Chai Latte","5.00"],["Golden Milk","4.50"],["Hot Chocolate","3.75"],["London Fog","4.50"],["Matcha Latte","5.00"],["Tea","3.25"]],
+"Refreshers":[["Lavender Mint Lemonade","4.50"],["Peach Arnold Palmer","4.25"],["Lemonade","4.50"],["Peach Green Tea Lemonade","4.25"]],
+"Smoothies":[["Beach Bum","6.00"],["Chunky Monkey","6.00"],["Berries'nCream","6.00"]],
+"Food":[["Bonfire Burritos","10.25"],["Panini","9.05"]]
+};
+const tabs=document.getElementById("tabs"), grid=document.getElementById("menuGrid");
+Object.keys(menu).forEach((cat,i)=>{
+ const b=document.createElement("button"); b.className="tab"+(i===0?" active":""); b.textContent=cat;
+ b.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));b.classList.add("active");render(cat)};
+ tabs.appendChild(b);
+});
+function render(cat){
+ grid.innerHTML="";
+ const card=document.createElement("div"); card.className="menu-card";
+ card.innerHTML="<h3>"+cat+"</h3>";
+ menu[cat].forEach(([name,price])=>card.innerHTML+=`<div class="item"><span>${name}</span><span class="price">$${price}</span></div>`);
+ grid.appendChild(card);
+}
+render(Object.keys(menu)[0]);
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
